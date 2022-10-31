@@ -1,0 +1,364 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    font-size: 1.1em;
+}
+
+body {
+    background-image: url("../images/bg-pattern.png");
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+textarea {
+    font-size: 1em;
+}
+
+hr {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+
+main .details {
+    font-size: 0.9em;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 10px 0;
+    background-color: #0a3377;
+    border-bottom: 1px solid #fff3;
+}
+
+header .inner-header {
+    max-width: 1280px;
+    height: auto;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .inner-header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    font-family: sans-serif;
+    background-color: #fb0846;
+    padding: 3px 10px 3px 5px;
+    border-radius: 5px;
+}
+
+header .inner-header .logo-link {
+    transition: transform 0.1s ease;
+}
+
+header .inner-header .logo-link:hover {
+    transform: rotate(-5deg);
+}
+
+header .inner-header nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .inner-header nav ul li {
+    display: inline;
+    margin-left: 8px;
+}
+
+header .inner-header nav ul li:hover {
+    text-decoration: underline;
+}
+
+img.avatar {
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.notification {
+    color: #f00;
+}
+
+main {
+    max-width: 1280px;
+    height: auto;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+main article {
+    width: 640px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+main article.image-particular {
+    width: 1024px;
+}
+
+main article .image {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+main article img {
+    border: 1px dotted #FFF;
+    width: auto;
+	height: 480px;
+    max-width: 640px;
+    box-sizing: border-box;
+}
+
+main article.image-particular img {
+    height: 768px;
+    max-width: 1024px;
+}
+
+main .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .pagination .page-indicator {
+    margin: 0 15px;
+}
+
+main .pagination .page-indicator-next,
+main .pagination .page-indicator-prev {
+    font-size: 0.9em;
+    opacity: 40%;
+    margin: 0 15px;
+}
+
+main .pagination .pagination-arrow {
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+main .rates,
+main .comments {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main .comments .add-comment {
+    margin: 15px 0 50px 0;
+}
+
+main .comments .add-comment fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+main .comments .add-comment form textarea {
+    resize: vertical;
+}
+
+main .form {
+    text-align: center;
+    width: 640px;
+}
+
+main .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .form form p {
+    margin: 20px 0;
+    width: 370px;
+    text-align: center;
+}
+
+main .form form input {
+    width: 350px;
+}
+
+main .user-details,
+main .update-password,
+main .add-meme {
+    width: 1024px;
+}
+
+main .update-password,
+main .add-meme {
+    margin-top: 35px;
+}
+
+main .update-password form p,
+main .add-meme form p {
+    margin-top: 15px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #fff3;
+    background-color: #0a3377;
+}
+
+footer p {
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+
+.ratee {
+    width: 150px;
+    height: 50px;
+}
+
+.ratee:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+
+.ratee:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color:#ccc;
+}
+
+.ratee:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.ratee > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.ratee:not(:checked) > label:hover,
+.ratee:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.ratee > input:checked + label:hover,
+.ratee > input:checked + label:hover ~ label,
+.ratee > input:checked ~ label:hover,
+.ratee > input:checked ~ label:hover ~ label,
+.ratee > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+@media screen and (max-width: 1064px) {
+    main article,
+    main article.image-particular,
+    main .form,
+    main .form form p,
+    main .form form input,
+    main .user-details,
+    main .update-password,
+    main .add-meme,
+    .ratee
+    {
+        width: 100%;
+    }
+
+    .ratee
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    main article img,
+    main article.image-particular img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .inner-header {
+        padding: 20px 10px 0px 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
