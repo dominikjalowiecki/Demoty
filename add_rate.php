@@ -1,20 +1,22 @@
 <?php
+session_start();
+
 $options = array(
     'options' => array(
         'min_range' => 1
     )
 );
+
 if (
     !empty($id_image = trim($_POST["id_image"] ?? null)) &&
-    !empty($id_user = trim($_POST["id_user"] ?? null)) &&
     !empty($rate = trim($_POST["rate"] ?? null)) &&
     filter_var((int) $id_image, FILTER_VALIDATE_INT, $options) &&
-    filter_var((int) $id_user, FILTER_VALIDATE_INT, $options) &&
     filter_var((int) $rate, FILTER_VALIDATE_INT, $options)
 ) {
     require 'shared/config.php';
     $conn = mysqli_connect(CONFIG['host'], CONFIG['user'], CONFIG['password'], CONFIG['db']);
 
+    $id_user = $_SESSION['id_user'];
     $query = "
             INSERT INTO
                 rate (id_image, id_user, rate)

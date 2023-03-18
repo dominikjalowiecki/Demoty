@@ -196,7 +196,6 @@ $is_logged = $_SESSION['is_logged'] ?? False;
                     if (rate_value >= 1 && rate_value <= 5) {
                         var rate_form_data = new FormData();
                         rate_form_data.append('id_image', id_image);
-                        rate_form_data.append('id_user', id_user);
                         rate_form_data.append('rate', rate_value);
 
                         fetch('add_rate.php', {
@@ -227,7 +226,6 @@ $is_logged = $_SESSION['is_logged'] ?? False;
 
                     var comment_form_data = new FormData();
                     comment_form_data.append('id_image', id_image);
-                    comment_form_data.append('id_user', id_user);
                     comment_form_data.append('content', content);
 
                     function handleErrors(response) {
